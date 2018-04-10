@@ -53,9 +53,22 @@ $spacing_scales: 0, 0.25, 0.404, 0.654, 1.051, 1.700, 2.75, 4.449;
   }
 }
 // Auto
+.ma {
+  margin: auto !important;
+}
+.mya {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
 .mxa {
   margin-left: auto !important;
   margin-right: auto !important;
+}
+.mta {
+  margin-top: auto !important;
+}
+.mba {
+  margin-bottom: auto !important;
 }
 .mla {
   margin-left: auto !important;

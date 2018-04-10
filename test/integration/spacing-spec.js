@@ -574,6 +574,13 @@ describe("Spacing", () => {
   });
 
   context("Auto margin", () => {
+    it("Margin all sides 0", () => {
+      cy.get(".ma")
+        .should("not.have.css", "margin-top", "0px")
+        .should("not.have.css", "margin-bottom", "0px")
+        .should("not.have.css", "margin-left", "0px")
+        .should("not.have.css", "margin-right", "0px");
+    });
     it("Margin both left and right sides 0", () => {
       cy.get(".mxa")
         .should("not.have.css", "margin-left", "0px")
@@ -581,24 +588,28 @@ describe("Spacing", () => {
     });
     it("Margin left side", () => {
       cy.get(".mla")
-        .should("not.have.css", "margin-left", "0px")
+        .should("have.css", "margin-right", "0px")
+        .should("not.have.css", "margin-left", "0px");
     });
     it("Margin right side", () => {
       cy.get(".mra")
+        .should("have.css", "margin-left", "0px")
         .should("not.have.css", "margin-right", "0px");
     });
-    it("Margin both left and right sides - alias", () => {
-      cy.get(".mx-auto")
-        .should("not.have.css", "margin-left", "0px")
-        .should("not.have.css", "margin-right", "0px");
+    it("Margin top and bottom auto", () => {
+      cy.get(".mya")
+        .should("not.have.css", "margin-top", "0px")
+        .should("not.have.css", "margin-bottom", "0px");
     });
-    it("Margin left side - alias", () => {
-      cy.get(".ml-auto")
-        .should("not.have.css", "margin-left", "0px")
+    it("Margin top auto", () => {
+      cy.get(".mta")
+        .should("not.have.css", "margin-top", "0px")
+        .should("have.css", "margin-bottom", "0px");
     });
-    it("Margin right side - alias", () => {
-      cy.get(".mr-auto")
-        .should("not.have.css", "margin-right", "0px");
+    it("Margin bottom auto", () => {
+      cy.get(".mba")
+        .should("have.css", "margin-top", "0px")
+        .should("not.have.css", "margin-bottom", "0px");
     });
   });
 });

@@ -12,6 +12,11 @@
       background-color: rgb(127, 255, 212);
       border: 1px solid black;
     }
+    .box {
+      width: 300px;
+      height: 100px;
+      background-color: rgb(127, 255, 212);
+    }
   </style>
 </head>
 
@@ -173,11 +178,20 @@
   <div class="container dinline-block mx7">Margin</div>
 
   <h3>Margin auto</h3>
-  <div class="w10 mxa">Margin auto</div>
+  <div class="box dflex">
+    <div class="ma">Margin auto</div>
+  </div>
+  <div class="w10 mxa">Margin auto left right</div>
   <div class="w10 mla">Margin auto left</div>
   <div class="w10 mra">Margin auto right</div>
-  <div class="w10 mxa">Margin auto</div>
-  <div class="w10 mla">Margin auto left</div>
-  <div class="w10 mra">Margin auto right</div>
+  <div class="box dflex">
+    <div class="mya">Margin auto top bottom</div>
+  </div>
+  <div class="box dflex">
+    <div class="mta">Margin auto top</div>
+  </div>
+  <div class="box dflex">
+    <div class="mba">Margin auto bottom</div>
+  </div>
 </body>
 </html>
