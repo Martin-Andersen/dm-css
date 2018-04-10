@@ -1,21 +1,25 @@
 build/
 dist/
 docs/jsdoc/
+.idea/
 log/
 node_modules/
 tmp/
 typings/
 .nyc_output/
 css/
+website/
 
 *.bak
 *.log
+*.ai
 npm-debug.log*
 yarn-error.log*
 
 .vscode
 .DS_Store
 
+package.tmp.json
 package.dev.json
 package.pub.json
 bs-config.js
@@ -23,3 +27,8 @@ index.html
 index.scss
 dm.scss
 dm.css
+README.html
+README.odt
+README.pdf
+build.sh
+dev-notes.md
